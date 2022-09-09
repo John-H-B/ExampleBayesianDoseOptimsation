@@ -228,9 +228,6 @@ print(f'Best Dose if pessimistic: {(10 ** solutions[0]) / 10 ** 11:.2f} x 10^11 
 print(f'Best Dose if realistic: {(10 ** solutions[1]) / 10 ** 11:.2f} x 10^11 VP')
 print(f'Best Dose if optimistic: {(10 ** solutions[2]) / 10 ** 11:.2f} x 10^11 VP')
 
-print(np.quantile(record_of_predicted_optimal_dose, 0.1))
-print(np.quantile(record_of_predicted_optimal_dose, 0.5))
-print(np.quantile(record_of_predicted_optimal_dose, 0.9))
 
 print(f'Median of credible optimal doses: '
       f'{10 ** np.quantile(record_of_predicted_optimal_dose, 0.5) / 10 ** 11:.2f} x 10^11 VP')
